@@ -1,0 +1,1967 @@
+/*Mixin Sass */
+/*Kode Sass */
+.button {
+  background-color: #BDBDBD;
+  border: 2px solid #BDBDBD;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 1em;
+  float: left;
+  margin: 3px;
+  padding: 3px 6px 3px;
+  position: static;
+  transition: 0.5s;
+  vertical-align: middle;
+  /*Size */
+  /*button group Horizonta */ }
+  .button:hover {
+    box-shadow: 0 0 0.5px 0.5px #BDBDBD;
+    transition: 0.5s ease-out;
+    cursor: pointer; }
+  .button:active {
+    background-color: #BDBDBD;
+    border: 2px solid #BDBDBD;
+    transform: scale(0.9, 0.9);
+    transition: 0.1s; }
+  .button:focus {
+    background-color: #BDBDBD;
+    color: #FFFFFF;
+    outline: none; }
+  .button-group {
+    display: inline-block;
+    /*button group Vertikal */ }
+    .button-group > .button.button {
+      border-radius: 1px;
+      float: left;
+      margin: 3px 0px;
+      transition: 0.5s; }
+      .button-group > .button.button:first-child {
+        border-top-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+        margin-left: 3px; }
+      .button-group > .button.button:last-child {
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px; }
+    .button-group > button.button.transparent {
+      border-right: 1px solid;
+      border-left: 1px solid;
+      border-radius: 1px;
+      float: left;
+      margin: 3px 0px; }
+      .button-group > button.button.transparent:first-child {
+        border-left: 2px solid;
+        border-top-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+        margin-left: 3px; }
+      .button-group > button.button.transparent:last-child {
+        border-right: 2px solid;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px; }
+    .button-group > button.button.circle {
+      display: none; }
+    .button-group-vertikal > .button, .button-group-vertikal .button.red, .button-group-vertikal .button.pink, .button-group-vertikal .button.purple, .button-group-vertikal .button.deep-purple, .button-group-vertikal .button.indigo, .button-group-vertikal .button.blue, .button-group-vertikal .button.light-blue, .button-group-vertikal .button.cyan, .button-group-vertikal .button.teal, .button-group-vertikal .button.green, .button-group-vertikal .button.amber, .button-group-vertikal .button.yellow, .button-group-vertikal .button.orange, .button-group-vertikal .button.deep-orange {
+      border-radius: 0;
+      clear: both;
+      display: block;
+      margin: 0; }
+      .button-group-vertikal > .button:first-child, .button-group-vertikal .button.red:first-child, .button-group-vertikal .button.pink:first-child, .button-group-vertikal .button.purple:first-child, .button-group-vertikal .button.deep-purple:first-child, .button-group-vertikal .button.indigo:first-child, .button-group-vertikal .button.blue:first-child, .button-group-vertikal .button.light-blue:first-child, .button-group-vertikal .button.cyan:first-child, .button-group-vertikal .button.teal:first-child, .button-group-vertikal .button.green:first-child, .button-group-vertikal .button.amber:first-child, .button-group-vertikal .button.yellow:first-child, .button-group-vertikal .button.orange:first-child, .button-group-vertikal .button.deep-orange:first-child {
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px; }
+      .button-group-vertikal > .button:last-child, .button-group-vertikal .button.red:last-child, .button-group-vertikal .button.pink:last-child, .button-group-vertikal .button.purple:last-child, .button-group-vertikal .button.deep-purple:last-child, .button-group-vertikal .button.indigo:last-child, .button-group-vertikal .button.blue:last-child, .button-group-vertikal .button.light-blue:last-child, .button-group-vertikal .button.cyan:last-child, .button-group-vertikal .button.teal:last-child, .button-group-vertikal .button.green:last-child, .button-group-vertikal .button.amber:last-child, .button-group-vertikal .button.yellow:last-child, .button-group-vertikal .button.orange:last-child, .button-group-vertikal .button.deep-orange:last-child {
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px; }
+  .button.circle {
+    background-color: #BDBDBD;
+    border-radius: 50%;
+    display: block;
+    padding: 5px;
+    text-align: center; }
+    .button.circle > .ikon {
+      color: #000000; }
+    .button.circle.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.circle.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.circle.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.circle.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+    .button.circle.red {
+      background-color: #F44336;
+      border-radius: 50%;
+      display: block;
+      padding: 5px;
+      text-align: center; }
+      .button.circle.red > .ikon {
+        color: #FFFFFF; }
+      .button.circle.red.super-mini {
+        margin-top: 3px;
+        font-size: 0.6em; }
+      .button.circle.red.mini {
+        margin-top: 3px;
+        font-size: 0.8em; }
+      .button.circle.red.large {
+        margin-top: 3px;
+        font-size: 1.2em; }
+      .button.circle.red.super-large {
+        margin-top: 3px;
+        font-size: 1.5em; }
+    .button.circle.pink {
+      background-color: #E91E63;
+      border-radius: 50%;
+      display: block;
+      padding: 5px;
+      text-align: center; }
+      .button.circle.pink > .ikon {
+        color: #FFFFFF; }
+      .button.circle.pink.super-mini {
+        margin-top: 3px;
+        font-size: 0.6em; }
+      .button.circle.pink.mini {
+        margin-top: 3px;
+        font-size: 0.8em; }
+      .button.circle.pink.large {
+        margin-top: 3px;
+        font-size: 1.2em; }
+      .button.circle.pink.super-large {
+        margin-top: 3px;
+        font-size: 1.5em; }
+    .button.circle.purple {
+      background-color: #9C27B0;
+      border-radius: 50%;
+      display: block;
+      padding: 5px;
+      text-align: center; }
+      .button.circle.purple > .ikon {
+        color: #FFFFFF; }
+      .button.circle.purple.super-mini {
+        margin-top: 3px;
+        font-size: 0.6em; }
+      .button.circle.purple.mini {
+        margin-top: 3px;
+        font-size: 0.8em; }
+      .button.circle.purple.large {
+        margin-top: 3px;
+        font-size: 1.2em; }
+      .button.circle.purple.super-large {
+        margin-top: 3px;
+        font-size: 1.5em; }
+    .button.circle.deep-purple {
+      background-color: #673AB7;
+      border-radius: 50%;
+      display: block;
+      padding: 5px;
+      text-align: center; }
+      .button.circle.deep-purple > .ikon {
+        color: #FFFFFF; }
+      .button.circle.deep-purple.super-mini {
+        margin-top: 3px;
+        font-size: 0.6em; }
+      .button.circle.deep-purple.mini {
+        margin-top: 3px;
+        font-size: 0.8em; }
+      .button.circle.deep-purple.large {
+        margin-top: 3px;
+        font-size: 1.2em; }
+      .button.circle.deep-purple.super-large {
+        margin-top: 3px;
+        font-size: 1.5em; }
+    .button.circle.indigo {
+      background-color: #3F51B5;
+      border-radius: 50%;
+      display: block;
+      padding: 5px;
+      text-align: center; }
+      .button.circle.indigo > .ikon {
+        color: #FFFFFF; }
+      .button.circle.indigo.super-mini {
+        margin-top: 3px;
+        font-size: 0.6em; }
+      .button.circle.indigo.mini {
+        margin-top: 3px;
+        font-size: 0.8em; }
+      .button.circle.indigo.large {
+        margin-top: 3px;
+        font-size: 1.2em; }
+      .button.circle.indigo.super-large {
+        margin-top: 3px;
+        font-size: 1.5em; }
+    .button.circle.blue {
+      background-color: #2196F3;
+      border-radius: 50%;
+      display: block;
+      padding: 5px;
+      text-align: center; }
+      .button.circle.blue > .ikon {
+        color: #FFFFFF; }
+      .button.circle.blue.super-mini {
+        margin-top: 3px;
+        font-size: 0.6em; }
+      .button.circle.blue.mini {
+        margin-top: 3px;
+        font-size: 0.8em; }
+      .button.circle.blue.large {
+        margin-top: 3px;
+        font-size: 1.2em; }
+      .button.circle.blue.super-large {
+        margin-top: 3px;
+        font-size: 1.5em; }
+    .button.circle.light-blue {
+      background-color: #03A9F4;
+      border-radius: 50%;
+      display: block;
+      padding: 5px;
+      text-align: center; }
+      .button.circle.light-blue > .ikon {
+        color: #FFFFFF; }
+      .button.circle.light-blue.super-mini {
+        margin-top: 3px;
+        font-size: 0.6em; }
+      .button.circle.light-blue.mini {
+        margin-top: 3px;
+        font-size: 0.8em; }
+      .button.circle.light-blue.large {
+        margin-top: 3px;
+        font-size: 1.2em; }
+      .button.circle.light-blue.super-large {
+        margin-top: 3px;
+        font-size: 1.5em; }
+    .button.circle.cyan {
+      background-color: #00BCD4;
+      border-radius: 50%;
+      display: block;
+      padding: 5px;
+      text-align: center; }
+      .button.circle.cyan > .ikon {
+        color: #FFFFFF; }
+      .button.circle.cyan.super-mini {
+        margin-top: 3px;
+        font-size: 0.6em; }
+      .button.circle.cyan.mini {
+        margin-top: 3px;
+        font-size: 0.8em; }
+      .button.circle.cyan.large {
+        margin-top: 3px;
+        font-size: 1.2em; }
+      .button.circle.cyan.super-large {
+        margin-top: 3px;
+        font-size: 1.5em; }
+    .button.circle.teal {
+      background-color: #009688;
+      border-radius: 50%;
+      display: block;
+      padding: 5px;
+      text-align: center; }
+      .button.circle.teal > .ikon {
+        color: #FFFFFF; }
+      .button.circle.teal.super-mini {
+        margin-top: 3px;
+        font-size: 0.6em; }
+      .button.circle.teal.mini {
+        margin-top: 3px;
+        font-size: 0.8em; }
+      .button.circle.teal.large {
+        margin-top: 3px;
+        font-size: 1.2em; }
+      .button.circle.teal.super-large {
+        margin-top: 3px;
+        font-size: 1.5em; }
+    .button.circle.green {
+      background-color: #4CAF50;
+      border-radius: 50%;
+      display: block;
+      padding: 5px;
+      text-align: center; }
+      .button.circle.green > .ikon {
+        color: #FFFFFF; }
+      .button.circle.green.super-mini {
+        margin-top: 3px;
+        font-size: 0.6em; }
+      .button.circle.green.mini {
+        margin-top: 3px;
+        font-size: 0.8em; }
+      .button.circle.green.large {
+        margin-top: 3px;
+        font-size: 1.2em; }
+      .button.circle.green.super-large {
+        margin-top: 3px;
+        font-size: 1.5em; }
+    .button.circle.light-green {
+      background-color: #8BC34A;
+      border-radius: 50%;
+      display: block;
+      padding: 5px;
+      text-align: center; }
+      .button.circle.light-green > .ikon {
+        color: #FFFFFF; }
+      .button.circle.light-green.super-mini {
+        margin-top: 3px;
+        font-size: 0.6em; }
+      .button.circle.light-green.mini {
+        margin-top: 3px;
+        font-size: 0.8em; }
+      .button.circle.light-green.large {
+        margin-top: 3px;
+        font-size: 1.2em; }
+      .button.circle.light-green.super-large {
+        margin-top: 3px;
+        font-size: 1.5em; }
+    .button.circle.lime {
+      background-color: #CDDC39;
+      border-radius: 50%;
+      display: block;
+      padding: 5px;
+      text-align: center; }
+      .button.circle.lime > .ikon {
+        color: #FFFFFF; }
+      .button.circle.lime.super-mini {
+        margin-top: 3px;
+        font-size: 0.6em; }
+      .button.circle.lime.mini {
+        margin-top: 3px;
+        font-size: 0.8em; }
+      .button.circle.lime.large {
+        margin-top: 3px;
+        font-size: 1.2em; }
+      .button.circle.lime.super-large {
+        margin-top: 3px;
+        font-size: 1.5em; }
+    .button.circle.yellow {
+      background-color: #FFEB3B;
+      border-radius: 50%;
+      display: block;
+      padding: 5px;
+      text-align: center; }
+      .button.circle.yellow > .ikon {
+        color: #000000; }
+      .button.circle.yellow.super-mini {
+        margin-top: 3px;
+        font-size: 0.6em; }
+      .button.circle.yellow.mini {
+        margin-top: 3px;
+        font-size: 0.8em; }
+      .button.circle.yellow.large {
+        margin-top: 3px;
+        font-size: 1.2em; }
+      .button.circle.yellow.super-large {
+        margin-top: 3px;
+        font-size: 1.5em; }
+    .button.circle.amber {
+      background-color: #FFC107;
+      border-radius: 50%;
+      display: block;
+      padding: 5px;
+      text-align: center; }
+      .button.circle.amber > .ikon {
+        color: #FFFFFF; }
+      .button.circle.amber.super-mini {
+        margin-top: 3px;
+        font-size: 0.6em; }
+      .button.circle.amber.mini {
+        margin-top: 3px;
+        font-size: 0.8em; }
+      .button.circle.amber.large {
+        margin-top: 3px;
+        font-size: 1.2em; }
+      .button.circle.amber.super-large {
+        margin-top: 3px;
+        font-size: 1.5em; }
+    .button.circle.orange {
+      background-color: #FF9800;
+      border-radius: 50%;
+      display: block;
+      padding: 5px;
+      text-align: center; }
+      .button.circle.orange > .ikon {
+        color: #FFFFFF; }
+      .button.circle.orange.super-mini {
+        margin-top: 3px;
+        font-size: 0.6em; }
+      .button.circle.orange.mini {
+        margin-top: 3px;
+        font-size: 0.8em; }
+      .button.circle.orange.large {
+        margin-top: 3px;
+        font-size: 1.2em; }
+      .button.circle.orange.super-large {
+        margin-top: 3px;
+        font-size: 1.5em; }
+    .button.circle.deep-orange {
+      background-color: #FF5722;
+      border-radius: 50%;
+      display: block;
+      padding: 5px;
+      text-align: center; }
+      .button.circle.deep-orange > .ikon {
+        color: #FFFFFF; }
+      .button.circle.deep-orange.super-mini {
+        margin-top: 3px;
+        font-size: 0.6em; }
+      .button.circle.deep-orange.mini {
+        margin-top: 3px;
+        font-size: 0.8em; }
+      .button.circle.deep-orange.large {
+        margin-top: 3px;
+        font-size: 1.2em; }
+      .button.circle.deep-orange.super-large {
+        margin-top: 3px;
+        font-size: 1.5em; }
+  .button.red {
+    background-color: #F44336;
+    border: 2px solid #F44336;
+    border-radius: 2px;
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.red:hover {
+      box-shadow: 0 0 0.5px 0.5px #F44336;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.red:active {
+      background-color: #F44336;
+      border: 2px solid #F44336;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.red:focus {
+      background-color: #F44336;
+      color: #FFFFFF;
+      outline: none; }
+    .button.red.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.red.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.red.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.red.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.pink {
+    background-color: #E91E63;
+    border: 2px solid #E91E63;
+    border-radius: 2px;
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.pink:hover {
+      box-shadow: 0 0 0.5px 0.5px #E91E63;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.pink:active {
+      background-color: #E91E63;
+      border: 2px solid #E91E63;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.pink:focus {
+      background-color: #E91E63;
+      color: #FFFFFF;
+      outline: none; }
+    .button.pink.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.pink.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.pink.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.pink.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.purple {
+    background-color: #9C27B0;
+    border: 2px solid #9C27B0;
+    border-radius: 2px;
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.purple:hover {
+      box-shadow: 0 0 0.5px 0.5px #9C27B0;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.purple:active {
+      background-color: #9C27B0;
+      border: 2px solid #9C27B0;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.purple:focus {
+      background-color: #9C27B0;
+      color: #FFFFFF;
+      outline: none; }
+    .button.purple.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.purple.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.purple.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.purple.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.deep-purple {
+    background-color: #673AB7;
+    border: 2px solid #673AB7;
+    border-radius: 2px;
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.deep-purple:hover {
+      box-shadow: 0 0 0.5px 0.5px #673AB7;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.deep-purple:active {
+      background-color: #673AB7;
+      border: 2px solid #673AB7;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.deep-purple:focus {
+      background-color: #673AB7;
+      color: #FFFFFF;
+      outline: none; }
+    .button.deep-purple.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.deep-purple.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.deep-purple.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.deep-purple.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.indigo {
+    background-color: #3F51B5;
+    border: 2px solid #3F51B5;
+    border-radius: 2px;
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.indigo:hover {
+      box-shadow: 0 0 0.5px 0.5px #3F51B5;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.indigo:active {
+      background-color: #3F51B5;
+      border: 2px solid #3F51B5;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.indigo:focus {
+      background-color: #3F51B5;
+      color: #FFFFFF;
+      outline: none; }
+    .button.indigo.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.indigo.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.indigo.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.indigo.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.blue {
+    background-color: #2196F3;
+    border: 2px solid #2196F3;
+    border-radius: 2px;
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.blue:hover {
+      box-shadow: 0 0 0.5px 0.5px #2196F3;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.blue:active {
+      background-color: #2196F3;
+      border: 2px solid #2196F3;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.blue:focus {
+      background-color: #2196F3;
+      color: #FFFFFF;
+      outline: none; }
+    .button.blue.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.blue.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.blue.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.blue.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.light-blue {
+    background-color: #03A9F4;
+    border: 2px solid #03A9F4;
+    border-radius: 2px;
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.light-blue:hover {
+      box-shadow: 0 0 0.5px 0.5px #03A9F4;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.light-blue:active {
+      background-color: #03A9F4;
+      border: 2px solid #03A9F4;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.light-blue:focus {
+      background-color: #03A9F4;
+      color: #FFFFFF;
+      outline: none; }
+    .button.light-blue.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.light-blue.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.light-blue.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.light-blue.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.cyan {
+    background-color: #00BCD4;
+    border: 2px solid #00BCD4;
+    border-radius: 2px;
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.cyan:hover {
+      box-shadow: 0 0 0.5px 0.5px #00BCD4;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.cyan:active {
+      background-color: #00BCD4;
+      border: 2px solid #00BCD4;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.cyan:focus {
+      background-color: #00BCD4;
+      color: #FFFFFF;
+      outline: none; }
+    .button.cyan.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.cyan.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.cyan.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.cyan.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.teal {
+    background-color: #009688;
+    border: 2px solid #009688;
+    border-radius: 2px;
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.teal:hover {
+      box-shadow: 0 0 0.5px 0.5px #009688;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.teal:active {
+      background-color: #009688;
+      border: 2px solid #009688;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.teal:focus {
+      background-color: #009688;
+      color: #FFFFFF;
+      outline: none; }
+    .button.teal.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.teal.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.teal.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.teal.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.green {
+    background-color: #4CAF50;
+    border: 2px solid #4CAF50;
+    border-radius: 2px;
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.green:hover {
+      box-shadow: 0 0 0.5px 0.5px #4CAF50;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.green:active {
+      background-color: #4CAF50;
+      border: 2px solid #4CAF50;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.green:focus {
+      background-color: #4CAF50;
+      color: #FFFFFF;
+      outline: none; }
+    .button.green.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.green.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.green.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.green.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.light-green {
+    background-color: #8BC34A;
+    border: 2px solid #8BC34A;
+    border-radius: 2px;
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.light-green:hover {
+      box-shadow: 0 0 0.5px 0.5px #8BC34A;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.light-green:active {
+      background-color: #8BC34A;
+      border: 2px solid #8BC34A;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.light-green:focus {
+      background-color: #8BC34A;
+      color: #FFFFFF;
+      outline: none; }
+    .button.light-green.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.light-green.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.light-green.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.light-green.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.yellow {
+    background-color: #FFEB3B;
+    border: 2px solid #FFEB3B;
+    border-radius: 2px;
+    color: #000000;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.yellow:hover {
+      box-shadow: 0 0 0.5px 0.5px #FFEB3B;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.yellow:active {
+      background-color: #FFEB3B;
+      border: 2px solid #FFEB3B;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.yellow:focus {
+      background-color: #FFEB3B;
+      color: #000000;
+      outline: none; }
+    .button.yellow.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.yellow.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.yellow.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.yellow.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.amber {
+    background-color: #FFC107;
+    border: 2px solid #FFC107;
+    border-radius: 2px;
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.amber:hover {
+      box-shadow: 0 0 0.5px 0.5px #FFC107;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.amber:active {
+      background-color: #FFC107;
+      border: 2px solid #FFC107;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.amber:focus {
+      background-color: #FFC107;
+      color: #FFFFFF;
+      outline: none; }
+    .button.amber.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.amber.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.amber.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.amber.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.orange {
+    background-color: #FF9800;
+    border: 2px solid #FF9800;
+    border-radius: 2px;
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.orange:hover {
+      box-shadow: 0 0 0.5px 0.5px #FF9800;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.orange:active {
+      background-color: #FF9800;
+      border: 2px solid #FF9800;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.orange:focus {
+      background-color: #FF9800;
+      color: #FFFFFF;
+      outline: none; }
+    .button.orange.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.orange.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.orange.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.orange.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.deep-orange {
+    background-color: #FF5722;
+    border: 2px solid #FF5722;
+    border-radius: 2px;
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.deep-orange:hover {
+      box-shadow: 0 0 0.5px 0.5px #FF5722;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.deep-orange:active {
+      background-color: #FF5722;
+      border: 2px solid #FF5722;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.deep-orange:focus {
+      background-color: #FF5722;
+      color: #FFFFFF;
+      outline: none; }
+    .button.deep-orange.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.deep-orange.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.deep-orange.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.deep-orange.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.lime {
+    background-color: #CDDC39;
+    border: 2px solid #CDDC39;
+    border-radius: 2px;
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.lime:hover {
+      box-shadow: 0 0 0.5px 0.5px #CDDC39;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.lime:active {
+      background-color: #CDDC39;
+      border: 2px solid #CDDC39;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.lime:focus {
+      background-color: #CDDC39;
+      color: #FFFFFF;
+      outline: none; }
+    .button.lime.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.lime.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.lime.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.lime.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.white {
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 2px;
+    color: #000000;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.white:hover {
+      box-shadow: 0 0 0.5px 0.5px #FFFFFF;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.white:active {
+      background-color: #FFFFFF;
+      border: 2px solid #FFFFFF;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.white:focus {
+      background-color: #FFFFFF;
+      color: #000000;
+      outline: none; }
+    .button.white.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.white.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.white.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.white.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.transparent {
+    background-color: transparent;
+    border: 2px solid #BDBDBD;
+    border-radius: 2px;
+    color: #BDBDBD;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.transparent:hover {
+      box-shadow: 0 0 0.5px 0.5px #BDBDBD;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.transparent:active {
+      background-color: #BDBDBD;
+      border: 2px solid #BDBDBD;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.transparent:focus {
+      background-color: transparent;
+      color: #BDBDBD;
+      outline: none; }
+    .button.transparent.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.red.transparent {
+    background-color: transparent;
+    border: 2px solid #F44336;
+    border-radius: 2px;
+    color: #F44336;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.red.transparent:hover {
+      box-shadow: 0 0 0.5px 0.5px #F44336;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.red.transparent:active {
+      background-color: #F44336;
+      border: 2px solid #F44336;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.red.transparent:focus {
+      background-color: transparent;
+      color: #F44336;
+      outline: none; }
+    .button.red.transparent.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.red.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.red.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.red.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em;
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.red.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.red.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.red.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.pink.transparent {
+    background-color: transparent;
+    border: 2px solid #E91E63;
+    border-radius: 2px;
+    color: #E91E63;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.pink.transparent:hover {
+      box-shadow: 0 0 0.5px 0.5px #E91E63;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.pink.transparent:active {
+      background-color: #E91E63;
+      border: 2px solid #E91E63;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.pink.transparent:focus {
+      background-color: transparent;
+      color: #E91E63;
+      outline: none; }
+    .button.pink.transparent.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.pink.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.pink.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.pink.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em;
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.pink.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.pink.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.pink.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.purple.transparent {
+    background-color: transparent;
+    border: 2px solid #9C27B0;
+    border-radius: 2px;
+    color: #9C27B0;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.purple.transparent:hover {
+      box-shadow: 0 0 0.5px 0.5px #9C27B0;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.purple.transparent:active {
+      background-color: #9C27B0;
+      border: 2px solid #9C27B0;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.purple.transparent:focus {
+      background-color: transparent;
+      color: #9C27B0;
+      outline: none; }
+    .button.purple.transparent.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.purple.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.purple.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.purple.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em;
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.purple.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.purple.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.purple.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.deep-purple.transparent {
+    background-color: transparent;
+    border: 2px solid #673AB7;
+    border-radius: 2px;
+    color: #673AB7;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.deep-purple.transparent:hover {
+      box-shadow: 0 0 0.5px 0.5px #673AB7;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.deep-purple.transparent:active {
+      background-color: #673AB7;
+      border: 2px solid #673AB7;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.deep-purple.transparent:focus {
+      background-color: transparent;
+      color: #673AB7;
+      outline: none; }
+    .button.deep-purple.transparent.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.deep-purple.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.deep-purple.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.deep-purple.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em;
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.deep-purple.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.deep-purple.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.deep-purple.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.indigo.transparent {
+    background-color: transparent;
+    border: 2px solid #3F51B5;
+    border-radius: 2px;
+    color: #3F51B5;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.indigo.transparent:hover {
+      box-shadow: 0 0 0.5px 0.5px #3F51B5;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.indigo.transparent:active {
+      background-color: #3F51B5;
+      border: 2px solid #3F51B5;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.indigo.transparent:focus {
+      background-color: transparent;
+      color: #3F51B5;
+      outline: none; }
+    .button.indigo.transparent.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.indigo.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.indigo.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.indigo.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em;
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.indigo.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.indigo.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.indigo.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.blue.transparent {
+    background-color: transparent;
+    border: 2px solid #2196F3;
+    border-radius: 2px;
+    color: #2196F3;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.blue.transparent:hover {
+      box-shadow: 0 0 0.5px 0.5px #2196F3;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.blue.transparent:active {
+      background-color: #2196F3;
+      border: 2px solid #2196F3;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.blue.transparent:focus {
+      background-color: transparent;
+      color: #2196F3;
+      outline: none; }
+    .button.blue.transparent.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.blue.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.blue.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.blue.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em;
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.blue.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.blue.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.blue.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.light-blue.transparent {
+    background-color: transparent;
+    border: 2px solid #03A9F4;
+    border-radius: 2px;
+    color: #03A9F4;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.light-blue.transparent:hover {
+      box-shadow: 0 0 0.5px 0.5px #03A9F4;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.light-blue.transparent:active {
+      background-color: #03A9F4;
+      border: 2px solid #03A9F4;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.light-blue.transparent:focus {
+      background-color: transparent;
+      color: #03A9F4;
+      outline: none; }
+    .button.light-blue.transparent.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.light-blue.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.light-blue.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.light-blue.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em;
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.light-blue.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.light-blue.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.light-blue.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.cyan.transparent {
+    background-color: transparent;
+    border: 2px solid #00BCD4;
+    border-radius: 2px;
+    color: #00BCD4;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.cyan.transparent:hover {
+      box-shadow: 0 0 0.5px 0.5px #00BCD4;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.cyan.transparent:active {
+      background-color: #00BCD4;
+      border: 2px solid #00BCD4;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.cyan.transparent:focus {
+      background-color: transparent;
+      color: #00BCD4;
+      outline: none; }
+    .button.cyan.transparent.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.cyan.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.cyan.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.cyan.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em;
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.cyan.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.cyan.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.cyan.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.teal.transparent {
+    background-color: transparent;
+    border: 2px solid #009688;
+    border-radius: 2px;
+    color: #009688;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.teal.transparent:hover {
+      box-shadow: 0 0 0.5px 0.5px #009688;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.teal.transparent:active {
+      background-color: #009688;
+      border: 2px solid #009688;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.teal.transparent:focus {
+      background-color: transparent;
+      color: #009688;
+      outline: none; }
+    .button.teal.transparent.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.teal.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.teal.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.teal.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em;
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.teal.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.teal.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.teal.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.green.transparent {
+    background-color: transparent;
+    border: 2px solid #4CAF50;
+    border-radius: 2px;
+    color: #4CAF50;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.green.transparent:hover {
+      box-shadow: 0 0 0.5px 0.5px #4CAF50;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.green.transparent:active {
+      background-color: #4CAF50;
+      border: 2px solid #4CAF50;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.green.transparent:focus {
+      background-color: transparent;
+      color: #4CAF50;
+      outline: none; }
+    .button.green.transparent.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.green.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.green.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.green.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em;
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.green.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.green.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.green.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.light-green.transparent {
+    background-color: transparent;
+    border: 2px solid #8BC34A;
+    border-radius: 2px;
+    color: #8BC34A;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.light-green.transparent:hover {
+      box-shadow: 0 0 0.5px 0.5px #8BC34A;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.light-green.transparent:active {
+      background-color: #8BC34A;
+      border: 2px solid #8BC34A;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.light-green.transparent:focus {
+      background-color: transparent;
+      color: #8BC34A;
+      outline: none; }
+    .button.light-green.transparent.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.light-green.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.light-green.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.light-green.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em;
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.light-green.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.light-green.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.light-green.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.yellow.transparent {
+    background-color: transparent;
+    border: 2px solid #FFEB3B;
+    border-radius: 2px;
+    color: #FFEB3B;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.yellow.transparent:hover {
+      box-shadow: 0 0 0.5px 0.5px #FFEB3B;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.yellow.transparent:active {
+      background-color: #FFEB3B;
+      border: 2px solid #FFEB3B;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.yellow.transparent:focus {
+      background-color: transparent;
+      color: #FFEB3B;
+      outline: none; }
+    .button.yellow.transparent.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.yellow.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.yellow.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.yellow.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em;
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.yellow.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.yellow.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.yellow.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.amber.transparent {
+    background-color: transparent;
+    border: 2px solid #FFC107;
+    border-radius: 2px;
+    color: #FFC107;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.amber.transparent:hover {
+      box-shadow: 0 0 0.5px 0.5px #FFC107;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.amber.transparent:active {
+      background-color: #FFC107;
+      border: 2px solid #FFC107;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.amber.transparent:focus {
+      background-color: transparent;
+      color: #FFC107;
+      outline: none; }
+    .button.amber.transparent.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.amber.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.amber.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.amber.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em;
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.amber.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.amber.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.amber.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.orange.transparent {
+    background-color: transparent;
+    border: 2px solid #FF9800;
+    border-radius: 2px;
+    color: #FF9800;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.orange.transparent:hover {
+      box-shadow: 0 0 0.5px 0.5px #FF9800;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.orange.transparent:active {
+      background-color: #FF9800;
+      border: 2px solid #FF9800;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.orange.transparent:focus {
+      background-color: transparent;
+      color: #FF9800;
+      outline: none; }
+    .button.orange.transparent.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.orange.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.orange.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.orange.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em;
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.orange.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.orange.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.orange.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.deep-orange.transparent {
+    background-color: transparent;
+    border: 2px solid #FF5722;
+    border-radius: 2px;
+    color: #FF5722;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.deep-orange.transparent:hover {
+      box-shadow: 0 0 0.5px 0.5px #FF5722;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.deep-orange.transparent:active {
+      background-color: #FF5722;
+      border: 2px solid #FF5722;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.deep-orange.transparent:focus {
+      background-color: transparent;
+      color: #FF5722;
+      outline: none; }
+    .button.deep-orange.transparent.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.deep-orange.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.deep-orange.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.deep-orange.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em;
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.deep-orange.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.deep-orange.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.deep-orange.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.lime.transparent {
+    background-color: transparent;
+    border: 2px solid #CDDC39;
+    border-radius: 2px;
+    color: #CDDC39;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.lime.transparent:hover {
+      box-shadow: 0 0 0.5px 0.5px #CDDC39;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.lime.transparent:active {
+      background-color: #CDDC39;
+      border: 2px solid #CDDC39;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.lime.transparent:focus {
+      background-color: transparent;
+      color: #CDDC39;
+      outline: none; }
+    .button.lime.transparent.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.lime.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.lime.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.lime.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em;
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.lime.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.lime.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.lime.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+  .button.white.transparent {
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 2px;
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1em;
+    float: left;
+    margin: 3px;
+    padding: 3px 6px 3px;
+    position: static;
+    transition: 0.5s;
+    vertical-align: middle;
+    /*Size */ }
+    .button.white.transparent:hover {
+      box-shadow: 0 0 0.5px 0.5px #FFFFFF;
+      transition: 0.5s ease-out;
+      cursor: pointer; }
+    .button.white.transparent:active {
+      background-color: #FFFFFF;
+      border: 2px solid #FFFFFF;
+      transform: scale(0.9, 0.9);
+      transition: 0.1s; }
+    .button.white.transparent:focus {
+      background-color: transparent;
+      color: #FFFFFF;
+      outline: none; }
+    .button.white.transparent.super-mini {
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.white.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.white.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.white.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em;
+      margin-top: 3px;
+      font-size: 0.6em; }
+    .button.white.transparent.mini {
+      margin-top: 3px;
+      font-size: 0.8em; }
+    .button.white.transparent.large {
+      margin-top: 3px;
+      font-size: 1.2em; }
+    .button.white.transparent.super-large {
+      margin-top: 3px;
+      font-size: 1.5em; }
+
+/*# sourceMappingURL=button.css.map */
