@@ -1,0 +1,73 @@
+.grid-master {
+  float: left;
+  position: relative;
+  width: 100%; }
+
+.grid {
+  float: left;
+  position: relative;
+  width: 100%; }
+  .grid.s24 {
+    width: 100%; }
+  .grid.s23 {
+    width: 95.83333%; }
+  .grid.s22 {
+    width: 91.66667%; }
+  .grid.s21 {
+    width: 87.5%; }
+  .grid.s20 {
+    width: 83.33333%; }
+  .grid.s19 {
+    width: 79.16667%; }
+  .grid.s18 {
+    width: 75%; }
+  .grid.s17 {
+    width: 70.83333%; }
+  .grid.s16 {
+    width: 66.66667%; }
+  .grid.s15 {
+    width: 62.5%; }
+  .grid.s14 {
+    width: 58.33333%; }
+  .grid.s13 {
+    width: 54.16667%; }
+  .grid.s12 {
+    width: 50%; }
+  .grid.s11 {
+    width: 45.83333%; }
+  .grid.s10 {
+    width: 41.66667%; }
+  .grid.s9 {
+    width: 37.5%; }
+  .grid.s8 {
+    width: 33.33333%; }
+  .grid.s7 {
+    width: 29.16667%; }
+  .grid.s6 {
+    width: 25%; }
+  .grid.s5 {
+    width: 20.83333%; }
+  .grid.s4 {
+    width: 16.66667%; }
+  .grid.s3 {
+    width: 12.5%; }
+  .grid.s2 {
+    width: 8.33333%; }
+  .grid.s1 {
+    width: 4.16667%; }
+
+@media screen and (max-width: 480px) {
+  .grid {
+    float: left;
+    position: relative;
+    width: 100%; }
+    .grid.s1, .grid.s2, .grid.s3, .grid.s4, .grid.s4, .grid.s5, .grid.s6, .grid.s7, .grid.s8, .grid.s9, .grid.s10, .grid.s11, .grid.s12, .grid.s13, .grid.s14, .grid.s15, .grid.s16, .grid.s17, .grid.s18, .grid.s19, .grid.s20, .grid.s21, .grid.s22, .grid.s23, .grid.s24 {
+      width: 100%; }
+      .grid.s1.m1, .grid.s2.m1, .grid.s3.m1, .grid.s4.m1, .grid.s4.m1, .grid.s5.m1, .grid.s6.m1, .grid.s7.m1, .grid.s8.m1, .grid.s9.m1, .grid.s10.m1, .grid.s11.m1, .grid.s12.m1, .grid.s13.m1, .grid.s14.m1, .grid.s15.m1, .grid.s16.m1, .grid.s17.m1, .grid.s18.m1, .grid.s19.m1, .grid.s20.m1, .grid.s21.m1, .grid.s22.m1, .grid.s23.m1, .grid.s24.m1 {
+        width: 25%; }
+      .grid.s1.m2, .grid.s2.m2, .grid.s3.m2, .grid.s4.m2, .grid.s4.m2, .grid.s5.m2, .grid.s6.m2, .grid.s7.m2, .grid.s8.m2, .grid.s9.m2, .grid.s10.m2, .grid.s11.m2, .grid.s12.m2, .grid.s13.m2, .grid.s14.m2, .grid.s15.m2, .grid.s16.m2, .grid.s17.m2, .grid.s18.m2, .grid.s19.m2, .grid.s20.m2, .grid.s21.m2, .grid.s22.m2, .grid.s23.m2, .grid.s24.m2 {
+        width: 50%; }
+      .grid.s1.m3, .grid.s2.m3, .grid.s3.m3, .grid.s4.m3, .grid.s4.m3, .grid.s5.m3, .grid.s6.m3, .grid.s7.m3, .grid.s8.m3, .grid.s9.m3, .grid.s10.m3, .grid.s11.m3, .grid.s12.m3, .grid.s13.m3, .grid.s14.m3, .grid.s15.m3, .grid.s16.m3, .grid.s17.m3, .grid.s18.m3, .grid.s19.m3, .grid.s20.m3, .grid.s21.m3, .grid.s22.m3, .grid.s23.m3, .grid.s24.m3 {
+        width: 75%; } }
+
+/*# sourceMappingURL=grid.css.map */
