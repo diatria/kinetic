@@ -1,0 +1,790 @@
+@import ../lib/var
+
+/*Mixin Sass*/
+=button($warna, $warna2)
+    background-color: $warna
+    border: 2px solid $warna
+    border-radius: 2px
+    color: $warna2
+    font-family: 'Open Sans', sans-serif!important
+    font-size: 1em
+    float: left
+    margin: 3px
+    padding: 3px 6px 3px
+    position: static
+    transition: 0.5s
+    vertical-align: middle
+    /*Size*/
+    &:hover
+        box-shadow: 0 0 0.5px 0.5px $warna
+        transition: 0.5s ease-out
+        cursor: pointer
+    &:active
+        background-color: $warna
+        border: 2px solid $warna
+        transform: scale(0.9, 0.9)
+        transition: 0.1s
+    &:focus
+        background-color: $warna
+        color: $warna2
+        outline: none
+
+=buttonTransparent($warna)
+    background-color: transparent
+    border: 2px solid $warna
+    border-radius: 2px
+    color: $warna
+    font-family: 'Open Sans', sans-serif!important
+    font-size: 1em
+    float: left
+    margin: 3px
+    padding: 3px 6px 3px
+    position: static
+    transition: 0.5s
+    vertical-align: middle
+    /*Size*/
+    &:hover
+        box-shadow: 0 0 0.5px 0.5px $warna
+        transition: 0.5s ease-out
+        cursor: pointer
+    &:active
+        background-color: $warna
+        border: 2px solid $warna
+        transform: scale(0.9, 0.9)
+        transition: 0.1s
+    &:focus
+        background-color: transparent
+        color: $warna
+        outline: none
+
+=group()
+    display: inline-block
+    & > .button.button
+        border-radius: 1px
+        float: left
+        margin: 3px 0px
+        transition: 0.5s
+        &:first-child
+            border-top-left-radius: 2px
+            border-bottom-right-radius: 2px
+            margin-left: 3px
+        &:last-child
+            border-top-right-radius: 2px
+            border-bottom-right-radius: 2px
+    & > button.button.transparent
+        border-right: 1px solid
+        border-left: 1px solid
+        border-radius: 1px
+        float: left
+        margin: 3px 0px
+        &:first-child
+            border-left: 2px solid
+            border-top-left-radius: 2px
+            border-bottom-right-radius: 2px
+            margin-left: 3px
+        &:last-child
+            border-right: 2px solid
+            border-top-right-radius: 2px
+            border-bottom-right-radius: 2px
+        
+    & > button.button.circle
+        display: none
+        
+        
+=circle($warna, $warna2)
+    background-color: $warna
+    border-radius: 50%
+    display: block
+    padding: 5px
+    text-align: center
+    & > .ikon
+        color: $warna2
+=super-mini()
+    margin-top: 3px
+    font-size: 0.6em
+=mini()
+    margin-top: 3px
+    font-size: 0.8em
+=large()
+    margin-top: 3px
+    font-size: 1.2em
+=super-large()
+    margin-top: 3px
+    font-size: 1.5em
+/*Kode Sass*/
+.button
+    +button($grey-lighten-5, $white)
+    /*button group Horizonta*/
+    &-group
+        +group()
+        /*button group Vertikal*/
+        &-vertikal
+            & > .button, .button.red, .button.pink, .button.purple, .button.deep-purple, .button.indigo, .button.blue, .button.light-blue, .button.cyan, .button.teal, .button.green, .button.amber, .button.yellow, .button.orange, .button.deep-orange
+                border-radius: 0
+                clear: both
+                display: block
+                margin: 0
+                &:first-child
+                    border-top-left-radius: 2px
+                    border-top-right-radius: 2px
+                &:last-child
+                    border-bottom-left-radius: 2px
+                    border-bottom-right-radius: 2px
+    &.circle
+        +circle($grey-lighten-5, $black)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+        &.red
+            +circle($red, $white)
+            &.super-mini
+                +super-mini()
+            &.mini
+                +mini()
+            &.large
+                +large()
+            &.super-large
+                +super-large()
+        &.pink
+            +circle($pink, $white)
+            &.super-mini
+                +super-mini()
+            &.mini
+                +mini()
+            &.large
+                +large()
+            &.super-large
+                +super-large()
+        &.purple
+            +circle($purple, $white)
+            &.super-mini
+                +super-mini()
+            &.mini
+                +mini()
+            &.large
+                +large()
+            &.super-large
+                +super-large()
+        &.deep-purple
+            +circle($deep-purple, $white)
+            &.super-mini
+                +super-mini()
+            &.mini
+                +mini()
+            &.large
+                +large()
+            &.super-large
+                +super-large()
+        &.indigo
+            +circle($indigo, $white)
+            &.super-mini
+                +super-mini()
+            &.mini
+                +mini()
+            &.large
+                +large()
+            &.super-large
+                +super-large()
+        &.blue
+            +circle($blue, $white)
+            &.super-mini
+                +super-mini()
+            &.mini
+                +mini()
+            &.large
+                +large()
+            &.super-large
+                +super-large()
+        &.light-blue
+            +circle($light-blue, $white)
+            &.super-mini
+                +super-mini()
+            &.mini
+                +mini()
+            &.large
+                +large()
+            &.super-large
+                +super-large()
+        &.cyan
+            +circle($cyan, $white)
+            &.super-mini
+                +super-mini()
+            &.mini
+                +mini()
+            &.large
+                +large()
+            &.super-large
+                +super-large()
+        &.teal
+            +circle($teal, $white)
+            &.super-mini
+                +super-mini()
+            &.mini
+                +mini()
+            &.large
+                +large()
+            &.super-large
+                +super-large()
+        &.green
+            +circle($green, $white)
+            &.super-mini
+                +super-mini()
+            &.mini
+                +mini()
+            &.large
+                +large()
+            &.super-large
+                +super-large()
+        &.light-green
+            +circle($light-green, $white)
+            &.super-mini
+                +super-mini()
+            &.mini
+                +mini()
+            &.large
+                +large()
+            &.super-large
+                +super-large()
+        &.lime
+            +circle($lime, $white)
+            &.super-mini
+                +super-mini()
+            &.mini
+                +mini()
+            &.large
+                +large()
+            &.super-large
+                +super-large()
+        &.yellow
+            +circle($yellow, $black)
+            &.super-mini
+                +super-mini()
+            &.mini
+                +mini()
+            &.large
+                +large()
+            &.super-large
+                +super-large()
+        &.amber
+            +circle($amber, $white)
+            &.super-mini
+                +super-mini()
+            &.mini
+                +mini()
+            &.large
+                +large()
+            &.super-large
+                +super-large()
+        &.orange
+            +circle($orange, $white)
+            &.super-mini
+                +super-mini()
+            &.mini
+                +mini()
+            &.large
+                +large()
+            &.super-large
+                +super-large()
+        &.deep-orange
+            +circle($deep-orange, $white)
+            &.super-mini
+                +super-mini()
+            &.mini
+                +mini()
+            &.large
+                +large()
+            &.super-large
+                +super-large()
+
+    &.red
+        +button($red, $white)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.pink
+        +button($pink, $white)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.purple
+        +button($purple, $white)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.deep-purple
+        +button($deep-purple, $white)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.indigo
+        +button($indigo, $white)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.blue
+        +button($blue, $white)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.light-blue
+        +button($light-blue, $white)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.cyan
+        +button($cyan, $white)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.teal
+        +button($teal, $white)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.green
+        +button($green, $white)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.light-green
+        +button($light-green, $white)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.yellow
+        +button($yellow, $black)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.amber
+        +button($amber, $white)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.orange
+        +button($orange, $white)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.deep-orange
+        +button($deep-orange, $white)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.lime
+        +button($lime, $white)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.white
+        +button($white, $black)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+        
+    &.transparent
+        +buttonTransparent($grey-lighten-5)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.red.transparent
+        +buttonTransparent($red)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+            &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.pink.transparent
+        +buttonTransparent($pink)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+            &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.purple.transparent
+        +buttonTransparent($purple)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+            &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.deep-purple.transparent
+        +buttonTransparent($deep-purple)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+            &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.indigo.transparent
+        +buttonTransparent($indigo)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+            &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.blue.transparent
+        +buttonTransparent($blue)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+            &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.light-blue.transparent
+        +buttonTransparent($light-blue)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+            &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.cyan.transparent
+        +buttonTransparent($cyan)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+            &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.teal.transparent
+        +buttonTransparent($teal)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+            &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.green.transparent
+        +buttonTransparent($green)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+            &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.light-green.transparent
+        +buttonTransparent($light-green)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+            &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.yellow.transparent
+        +buttonTransparent($yellow)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+            &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.amber.transparent
+        +buttonTransparent($amber)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+            &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.orange.transparent
+        +buttonTransparent($orange)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+            &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.deep-orange.transparent
+        +buttonTransparent($deep-orange)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+            &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.lime.transparent
+        +buttonTransparent($lime)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+            &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+    &.white.transparent
+        +buttonTransparent($white)
+        &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
+            &.super-mini
+            +super-mini()
+        &.mini
+            +mini()
+        &.large
+            +large()
+        &.super-large
+            +super-large()
